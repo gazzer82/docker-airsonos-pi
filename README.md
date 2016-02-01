@@ -15,7 +15,7 @@ Differences in this image are:
 2. Run the container:
 ``` bash
 sudo docker run -d --restart=always --net="host" --name="airsonos" \
-  -p 5000-5050:5000-5050/tcp marcelst/airsonos-pi
+  -p 5000-5050:5000-5050/tcp gazzer82/docker-airsonos-pi
 ```
 
 ## Notes on running the container
