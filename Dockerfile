@@ -18,6 +18,8 @@ RUN /usr/sbin/usermod -u 99 nobody && \
 
 ADD supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
+RUN npm install -g babel@5
+
 # airsonos @ 500be5ba2eb4625ba6da17baf122570142e63b17
 RUN git clone https://github.com/justintime/airsonos && cd airsonos && npm install -g
 
